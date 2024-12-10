@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" id="logo"><span>Sti</span>ven</a>
+        <nav class="navbar">
+            <a href="#inicio" class="inicio" id="active">Inicio</a>
+            <a href="#portafolio" class="portafolio">Portafolio</a>
+            <a href="#redes" class="redes">Redes</a>
+        </nav>
+
+        <a href="#contacto" class="contacto" id="contact">Contactame</a>
+    </header>
+    <div id="inicio">
+        <section class="home">
+            <div class="home-content">
+                <h1>Hola</h1>
+
+                <h1>Yo soy <span>Stiven<br></span>Desarrollador de Software</h1>
+
+                <p>Mi nombre es Stiven Suarez Arango, tengo 18 años, soy estudiante de una técnica en desarrollo de
+                    software, con interés en aprender y aplicar tecnologías para crear soluciones innovadoras. Me
+                    apasiona la programación y el diseño de sistemas eficientes, y busco constantemente mejorar mis
+                    habilidades en desarrollo web, bases de datos y aplicaciones móviles. </p>
+
+                <div class="btn-box">
+                    <button class="btn-1">Contratarme</button>
+                    <button class="btn-2">Experiencia</button>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="img/img.jpg" alt="">
+            </div>
+        </section>
+    </div>
+    <div id="portafolio">
+        <section id="" class="about">
+            <div class="about-img">
+                <img src="img/ppp.jpg" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">Sobre <span>Mi</span></h2>
+                <h3>Desarrollador de <span>Software</span></h3>
+                <p>Soy estudiante de desarrollo de software, apasionado por la tecnología y la programación. Me
+                    encuentro en constante aprendizaje para dominar las herramientas y técnicas más actuales en la
+                    creación de aplicaciones y soluciones digitales. Mi objetivo es seguir desarrollando mis habilidades
+                    en programación, diseño de sistemas y trabajo en equipo para contribuir a proyectos innovadores que
+                    impacten positivamente en la sociedad.</p>
+                <a href="https://drive.google.com/drive/folders/1iLch11lTUUCZdjVbh1Ja6DmgY9ZZFyyC?usp=sharing" class="btn-2">Portafolio</a>
+            </div>
+        </section>>
+    </div>
+    <div >
+        <section class="contact-form">
+            <h2 id="contacto" class="contanct-me">Conta<span>ctame</span></h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Número de teléfono">
+                    <input type="text" placeholder="Asunto">
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje">
+            </textarea>
+                <input type="submit" value="Enviar Mensaje" class="btn-1">
+
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+
+        <div id="redes" class="social">
+            <a href="https://www.facebook.com/?locale=es_LA"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://co.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://x.com/?lang=es"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Servicios</a>
+            </li>
+            <li>
+                <a href="#">Sobre Mi</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+            <li>
+                <a href="#">Política de privacidad</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© 2024 Stiven | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https//cdnjs.cloudflare.com/ajax/libs/OwlCarouse12/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+
+        $('a.inicio').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800);
+        });
+
+        $('a.portafolio').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800);
+        });
+
+        $('a.contacto').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800);
+        });
+
+        $('a.redes').click(function (event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800);
+        });
+
+    </script>
+
+</body>
+
+
+</html>
